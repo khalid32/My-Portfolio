@@ -13,10 +13,15 @@
     --fw-reg: 300;
     --fw-bold: 900;
     
-    --clr-light: #fff;
+    /* --clr-light: #fff; */
+    --clr-light: #dfe6e9;
+
     --clr-dark: #303030;
     --clr-lightDarker: #2d3436;
-    --clr-accent: #16e0bd;
+    /* --clr-accent: #16e0bd; */
+    --clr-accent: #74b9ff;
+
+    
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -333,7 +338,7 @@ header {
 }
 
 .about-me__img {
-    box-shadow: var(--bs);        
+    box-shadow: var(--bs);
 }
 
 @media (min-width: 600px) {
