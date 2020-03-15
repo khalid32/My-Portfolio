@@ -21,6 +21,8 @@
     /* --clr-accent: #16e0bd; */
     --clr-accent: #74b9ff;
 
+    --clr-lightParagraph: #34495e;
+
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h2Min: 2.22rem;
@@ -76,8 +78,8 @@ strong { font-weight: var(--fw-bold) }
 .btn {
     display: inline-block;
     padding: .5em 2.5em;
-    background: var(--clr-accent);
-    color: var(--clr-dark);
+    background: var(--clr-dark);
+    color: var(--clr-light);
     text-decoration: none;
     cursor: pointer;
     font-size: .8rem;
@@ -130,7 +132,7 @@ h3 { font-size: var(--fs-h3) }
 }
 
 .section__title--work {
-    color: var(--clr-accent);
+    color: var(--clr-dark);
     font-weight: var(--fw-bold);
     margin-bottom: 2em;
 }
@@ -153,7 +155,7 @@ header {
 
 .nav {
     position: fixed;
-    background: var(--clr-lightDarker);
+    background: var(--clr-dark);
     color: var(--clr-light);
     top: 0; bottom: 0; left: 0; right: 0;
     z-index: 100;
@@ -286,16 +288,16 @@ header {
 /* My service section */
 
 .my-services {
-    background-color: var(--clr-lightDarker);
-    background-image: url(../Assets/back_end_performer_1.png);
+    background-color: var(--clr-light);
+    /* background-image: url(../Assets/back_end_performer_1.png); */
     background-size: cover;
     background-blend-mode: multiply;
-    color: var(--clr-light);
+    color: var(--clr-lightDarker);
     text-align: center;
 }
 
 .section__title--services {
-    color: var(--clr-accent);
+    color: var(--clr-dark);
     position: relative;
 
 }
@@ -317,6 +319,10 @@ header {
 .service {
     max-width: 500px;
     margin: 0 auto;
+}
+
+.descrip {
+    color: var(--clr-lightParagraph);
 }
 
 @media (min-width: 800px) {
@@ -376,12 +382,15 @@ header {
     }
 }
 
+.about-me__body {
+    color: var(--clr-lightParagraph);
+}
 
 /* My Work */
 
 .my-work {
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
     text-align: center;
 }
 
@@ -416,8 +425,8 @@ header {
 /* Footer */
 
 .footer {
-    background: #111;
-    color: var(--clr-accent);
+    background: var(--clr-dark);
+    color: var(--clr-light);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
@@ -435,7 +444,8 @@ header {
 
 .footer__link:hover,
 .social-list__link:hover {
-    opacity: .7;
+    /* opacity: .7; */
+    color: var(--clr-accent);
 }
 
 .footer__link:hover {
